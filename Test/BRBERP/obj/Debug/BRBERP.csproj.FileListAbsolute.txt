@@ -1,0 +1,72 @@
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\BRBERP.dll.config
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\BRBERP.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\BRBERP.pdb
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\Antlr3.Runtime.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\AspNet.ScriptManager.jQuery.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.AspNet.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.Core.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.OAuth.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.OpenId.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\EntityFramework.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\Microsoft.ScriptManager.WebForms.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\Microsoft.Web.Infrastructure.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\System.Web.Optimization.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\System.Web.Providers.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\WebGrease.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\EntityFramework.xml
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.Core.xml
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.OAuth.xml
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.OpenId.xml
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.AspNet.xml
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\# Projects\BRBERP\BRBERP\BRBERP\obj\Debug\BRBERP.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\obj\Debug\BRBERP.pdb
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\Newtonsoft.Json.dll
+D:\# Projects\BRBERP\BRBERP\BRBERP\bin\Newtonsoft.Json.xml
+D:\# Projects\BRBERP\BRBERP\BRBERP\obj\Debug\BRBERP.csprojResolveAssemblyReference.cache
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\BRBERP.dll.config
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\BRBERP.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\BRBERP.pdb
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\Antlr3.Runtime.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\AspNet.ScriptManager.jQuery.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.AspNet.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.Core.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.OAuth.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.OpenId.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\EntityFramework.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\Microsoft.ScriptManager.WebForms.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\Microsoft.Web.Infrastructure.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\Newtonsoft.Json.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\System.Web.Optimization.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\System.Web.Providers.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\WebGrease.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\Newtonsoft.Json.xml
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\EntityFramework.xml
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.Core.xml
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.OAuth.xml
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.OpenId.xml
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\DotNetOpenAuth.AspNet.xml
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\obj\Debug\BRBERP.csprojResolveAssemblyReference.cache
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\obj\Debug\BRBERP.dll
+E:\BRBERPgitRepository\BRBERP\BRBERP\BRBERP\obj\Debug\BRBERP.pdb

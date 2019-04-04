@@ -1,0 +1,668 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{885A93CA-49DC-4521-B5D5-E325B9774BD8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BRBERP</RootNamespace>
+    <AssemblyName>BRBERP</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\HP\Desktop\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.8.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="formaster\404.html" />
+    <Content Include="formaster\browserconfig.xml" />
+    <Content Include="formaster\crossdomain.xml" />
+    <Content Include="formaster\crud\jquery.min.js" />
+    <Content Include="formaster\crud\json2.js" />
+    <Content Include="formaster\dist\css\theme.css" />
+    <Content Include="formaster\dist\css\theme.min.css" />
+    <Content Include="formaster\dist\img\brand-white.svg" />
+    <Content Include="formaster\dist\img\brand.svg" />
+    <Content Include="formaster\dist\img\down-arrow.svg" />
+    <Content Include="formaster\dist\js\theme.js" />
+    <Content Include="formaster\dist\js\theme.min.js" />
+    <Content Include="formaster\favicon.ico" />
+    <Content Include="formaster\img\auth\login-bg.jpg" />
+    <Content Include="formaster\img\auth\register-bg.jpg" />
+    <Content Include="formaster\img\big\img1.jpg" />
+    <Content Include="formaster\img\big\img2.jpg" />
+    <Content Include="formaster\img\big\img3.jpg" />
+    <Content Include="formaster\img\big\img4.jpg" />
+    <Content Include="formaster\img\big\img5.jpg" />
+    <Content Include="formaster\img\big\img6.jpg" />
+    <Content Include="formaster\img\credit\american-express.png" />
+    <Content Include="formaster\img\credit\mastercard.png" />
+    <Content Include="formaster\img\credit\paypal2.png" />
+    <Content Include="formaster\img\credit\visa.png" />
+    <Content Include="formaster\img\head.png" />
+    <Content Include="formaster\img\navbar\blue.jpg" />
+    <Content Include="formaster\img\navbar\dark.jpg" />
+    <Content Include="formaster\img\navbar\green.jpg" />
+    <Content Include="formaster\img\navbar\light.jpg" />
+    <Content Include="formaster\img\navbar\orange.jpg" />
+    <Content Include="formaster\img\navbar\purple.jpg" />
+    <Content Include="formaster\img\navbar\red.jpg" />
+    <Content Include="formaster\img\placeholder\placeimg_400_200_nature.jpg" />
+    <Content Include="formaster\img\portfolio-1.jpg" />
+    <Content Include="formaster\img\users\1.jpg" />
+    <Content Include="formaster\img\users\2.jpg" />
+    <Content Include="formaster\img\users\3.jpg" />
+    <Content Include="formaster\img\users\4.jpg" />
+    <Content Include="formaster\img\users\5.jpg" />
+    <Content Include="formaster\img\widget\p1.jpg" />
+    <Content Include="formaster\img\widget\p2.jpg" />
+    <Content Include="formaster\img\widget\p3.jpg" />
+    <Content Include="formaster\img\widget\p4.jpg" />
+    <Content Include="formaster\js\alerts.js" />
+    <Content Include="formaster\js\calendar.js" />
+    <Content Include="formaster\js\carousel.js" />
+    <Content Include="formaster\js\chart-amcharts.js" />
+    <Content Include="formaster\js\chart-chartist.js" />
+    <Content Include="formaster\js\chart-flot.js" />
+    <Content Include="formaster\js\chart-knob.js" />
+    <Content Include="formaster\js\charts.js" />
+    <Content Include="formaster\js\datatables.js" />
+    <Content Include="formaster\js\form-advanced.js" />
+    <Content Include="formaster\js\form-components.js" />
+    <Content Include="formaster\js\form-picker.js" />
+    <Content Include="formaster\js\forms.js" />
+    <Content Include="formaster\js\layouts.js" />
+    <Content Include="formaster\js\range-slider.js" />
+    <Content Include="formaster\js\rating.js" />
+    <Content Include="formaster\js\session-time-out.js" />
+    <Content Include="formaster\js\tables.js" />
+    <Content Include="formaster\js\taskboard.js" />
+    <Content Include="formaster\js\widget-chart.js" />
+    <Content Include="formaster\js\widget-data.js" />
+    <Content Include="formaster\js\widget-statistic.js" />
+    <Content Include="formaster\js\widgets.js" />
+    <Content Include="formaster\login\css\css2.css" />
+    <Content Include="formaster\login\css\style.css" />
+    <Content Include="formaster\login\images\accent.png" />
+    <Content Include="formaster\login\images\bg.png" />
+    <Content Include="formaster\login\images\gradient.png" />
+    <Content Include="formaster\login\images\heroAccent.png" />
+    <Content Include="formaster\login\images\pass-icon.png" />
+    <Content Include="formaster\login\images\user-icon.png" />
+    <Content Include="formaster\plugins\amcharts\amcharts.js" />
+    <Content Include="formaster\plugins\amcharts\animate.min.js" />
+    <Content Include="formaster\plugins\amcharts\funnel.js" />
+    <Content Include="formaster\plugins\amcharts\gantt.js" />
+    <Content Include="formaster\plugins\amcharts\gauge.js" />
+    <Content Include="formaster\plugins\amcharts\images\dragIconRoundBig.png" />
+    <Content Include="formaster\plugins\amcharts\images\dragIconRoundBig.svg" />
+    <Content Include="formaster\plugins\amcharts\images\lens.png" />
+    <Content Include="formaster\plugins\amcharts\images\lens.svg" />
+    <Content Include="formaster\plugins\amcharts\pie.js" />
+    <Content Include="formaster\plugins\amcharts\radar.js" />
+    <Content Include="formaster\plugins\amcharts\serial.js" />
+    <Content Include="formaster\plugins\amcharts\themes\black.js" />
+    <Content Include="formaster\plugins\amcharts\themes\chalk.js" />
+    <Content Include="formaster\plugins\amcharts\themes\dark.js" />
+    <Content Include="formaster\plugins\amcharts\themes\light.js" />
+    <Content Include="formaster\plugins\amcharts\themes\patterns.js" />
+    <Content Include="formaster\plugins\amcharts\xy.js" />
+    <Content Include="formaster\plugins\ammap3\ammap\ammap.css" />
+    <Content Include="formaster\plugins\ammap3\ammap\ammap.js" />
+    <Content Include="formaster\plugins\ammap3\ammap\ammap_amcharts_extension.js" />
+    <Content Include="formaster\plugins\ammap3\ammap\maps\js\usaLow.js" />
+    <Content Include="formaster\plugins\bootstrap-slider\dist\bootstrap-slider.min.js" />
+    <Content Include="formaster\plugins\bootstrap-slider\dist\css\bootstrap-slider.min.css" />
+    <Content Include="formaster\plugins\bootstrap-tagsinput\dist\bootstrap-tagsinput.css" />
+    <Content Include="formaster\plugins\bootstrap-tagsinput\dist\bootstrap-tagsinput.min.js" />
+    <Content Include="formaster\plugins\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="formaster\plugins\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="formaster\plugins\c3\c3.min.css" />
+    <Content Include="formaster\plugins\c3\c3.min.js" />
+    <Content Include="formaster\plugins\chartist\dist\chartist.min.css" />
+    <Content Include="formaster\plugins\chartist\dist\chartist.min.js" />
+    <Content Include="formaster\plugins\d3\dist\d3.js" />
+    <Content Include="formaster\plugins\d3\dist\d3.min.js" />
+    <Content Include="formaster\plugins\d3\dist\d3.node.js" />
+    <Content Include="formaster\plugins\d3\dist\package.js" />
+    <Content Include="formaster\plugins\datatables.net-bs4\css\dataTables.bootstrap4.min.css" />
+    <Content Include="formaster\plugins\datatables.net-bs4\js\dataTables.bootstrap4.min.js" />
+    <Content Include="formaster\plugins\datatables.net-responsive-bs4\css\responsive.bootstrap4.min.css" />
+    <Content Include="formaster\plugins\datatables.net-responsive-bs4\js\responsive.bootstrap4.min.js" />
+    <Content Include="formaster\plugins\datatables.net-responsive\js\dataTables.responsive.min.js" />
+    <Content Include="formaster\plugins\datatables.net\js\jquery.dataTables.min.js" />
+    <Content Include="formaster\plugins\datedropper\datedropper.min.css" />
+    <Content Include="formaster\plugins\datedropper\datedropper.min.js" />
+    <Content Include="formaster\plugins\flot-charts\curvedLines.js" />
+    <Content Include="formaster\plugins\flot-charts\jquery.flot.categories.js" />
+    <Content Include="formaster\plugins\flot-charts\jquery.flot.js" />
+    <Content Include="formaster\plugins\flot-charts\jquery.flot.pie.js" />
+    <Content Include="formaster\plugins\flot-charts\jquery.flot.tooltip.min.js" />
+    <Content Include="formaster\plugins\fontawesome-free\css\all.min.css" />
+    <Content Include="formaster\plugins\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <Content Include="formaster\plugins\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <Content Include="formaster\plugins\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="formaster\plugins\fullcalendar\dist\fullcalendar.min.css" />
+    <Content Include="formaster\plugins\fullcalendar\dist\fullcalendar.min.js" />
+    <Content Include="formaster\plugins\icon-kit\dist\css\iconkit.min.css" />
+    <Content Include="formaster\plugins\icon-kit\dist\fonts\iconkit.svg" />
+    <Content Include="formaster\plugins\ionicons\dist\css\ionicons.min.css" />
+    <Content Include="formaster\plugins\ionicons\dist\fonts\ionicons.svg" />
+    <Content Include="formaster\plugins\jquery-bar-rating\dist\jquery.barrating.min.js" />
+    <Content Include="formaster\plugins\jquery-bar-rating\dist\themes\bars-1to10.css" />
+    <Content Include="formaster\plugins\jquery-bar-rating\dist\themes\bars-horizontal.css" />
+    <Content Include="formaster\plugins\jquery-bar-rating\dist\themes\bars-movie.css" />
+    <Content Include="formaster\plugins\jquery-bar-rating\dist\themes\bars-pill.css" />
+    <Content Include="formaster\plugins\jquery-bar-rating\dist\themes\bars-reversed.css" />
+    <Content Include="formaster\plugins\jquery-bar-rating\dist\themes\bars-square.css" />
+    <Content Include="formaster\plugins\jquery-bar-rating\dist\themes\bootstrap-stars.css" />
+    <Content Include="formaster\plugins\jquery-bar-rating\dist\themes\css-stars.css" />
+    <Content Include="formaster\plugins\jquery-bar-rating\dist\themes\fontawesome-stars-o.css" />
+    <Content Include="formaster\plugins\jquery-bar-rating\dist\themes\fontawesome-stars.css" />
+    <Content Include="formaster\plugins\jquery-knob\dist\jquery.knob.min.js" />
+    <Content Include="formaster\plugins\jquery-minicolors\jquery.minicolors.css" />
+    <Content Include="formaster\plugins\jquery-minicolors\jquery.minicolors.min.js" />
+    <Content Include="formaster\plugins\jquery-minicolors\jquery.minicolors.png" />
+    <Content Include="formaster\plugins\jquery-toast-plugin\dist\jquery.toast.min.css" />
+    <Content Include="formaster\plugins\jquery-toast-plugin\dist\jquery.toast.min.js" />
+    <Content Include="formaster\plugins\jquery.repeater\jquery.repeater.min.js" />
+    <Content Include="formaster\plugins\jvectormap\jquery-jvectormap.css" />
+    <Content Include="formaster\plugins\jvectormap\jquery-jvectormap.min.js" />
+    <Content Include="formaster\plugins\mohithg-switchery\dist\switchery.min.css" />
+    <Content Include="formaster\plugins\mohithg-switchery\dist\switchery.min.js" />
+    <Content Include="formaster\plugins\moment\moment.js" />
+    <Content Include="formaster\plugins\nestable\jquery.nestable.js" />
+    <Content Include="formaster\plugins\owl.carousel\dist\assets\ajax-loader.gif" />
+    <Content Include="formaster\plugins\owl.carousel\dist\assets\owl.carousel.min.css" />
+    <Content Include="formaster\plugins\owl.carousel\dist\assets\owl.theme.default.min.css" />
+    <Content Include="formaster\plugins\owl.carousel\dist\assets\owl.video.play.png" />
+    <Content Include="formaster\plugins\owl.carousel\dist\owl.carousel.min.js" />
+    <Content Include="formaster\plugins\perfect-scrollbar\css\perfect-scrollbar.css" />
+    <Content Include="formaster\plugins\perfect-scrollbar\dist\perfect-scrollbar.min.js" />
+    <Content Include="formaster\plugins\popper.js\dist\umd\popper.min.js" />
+    <Content Include="formaster\plugins\screenfull\dist\screenfull.js" />
+    <Content Include="formaster\plugins\select2\dist\css\select2.min.css" />
+    <Content Include="formaster\plugins\select2\dist\js\select2.min.js" />
+    <Content Include="formaster\plugins\summernote\dist\summernote-bs4.css" />
+    <Content Include="formaster\plugins\summernote\dist\summernote-bs4.min.js" />
+    <Content Include="formaster\plugins\sweetalert\dist\sweetalert.min.js" />
+    <Content Include="formaster\plugins\tempusdominus-bootstrap-4\build\css\tempusdominus-bootstrap-4.min.css" />
+    <Content Include="formaster\plugins\tempusdominus-bootstrap-4\build\js\tempusdominus-bootstrap-4.min.js" />
+    <Content Include="formaster\plugins\weather-icons\css\weather-icons.min.css" />
+    <Content Include="formaster\plugins\weather-icons\font\weathericons-regular-webfont.svg" />
+    <Content Include="formaster\src\img\brand-white.svg" />
+    <Content Include="formaster\src\img\brand.svg" />
+    <Content Include="formaster\src\img\down-arrow.svg" />
+    <Content Include="formaster\src\img\logo.svg" />
+    <Content Include="formaster\src\js\theme.js" />
+    <Content Include="formaster\src\js\theme.min.js" />
+    <Content Include="formaster\src\js\vendor\jquery-3.3.1.min.js" />
+    <Content Include="formaster\src\js\vendor\jquery-3.3.1.slim.min.js" />
+    <Content Include="formaster\src\js\vendor\modernizr-2.8.3.min.js" />
+    <Content Include="formaster\style\custom.css" />
+    <Content Include="HMS\AdminSetup\SetupMenuGroup.aspx" />
+    <Content Include="HMS\Dash\DashBoard.aspx" />
+    <Content Include="HMS\Setup\HpDepartment.aspx" />
+    <Content Include="HMS\Setup\HpSubDepartment.aspx" />
+    <Content Include="HMS\Setup\UserSetup.aspx" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="LogintoHMS.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="formaster\.gitignore" />
+    <Content Include="formaster\dist\css\theme.css.map" />
+    <Content Include="formaster\dist\css\theme.min.css.map" />
+    <Content Include="formaster\dist\img\.gitignore" />
+    <Content Include="formaster\package-lock.json" />
+    <Content Include="formaster\package.json" />
+    <Content Include="formaster\plugins\bootstrap-tagsinput\dist\bootstrap-tagsinput.min.js.map" />
+    <Content Include="formaster\plugins\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="formaster\plugins\bootstrap\dist\js\bootstrap.min.js.map" />
+    <Content Include="formaster\plugins\chartist\dist\chartist.min.js.map" />
+    <Content Include="formaster\plugins\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <Content Include="formaster\plugins\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="formaster\plugins\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <Content Include="formaster\plugins\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <Content Include="formaster\plugins\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <Content Include="formaster\plugins\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="formaster\plugins\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <Content Include="formaster\plugins\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <Content Include="formaster\plugins\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <Content Include="formaster\plugins\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="formaster\plugins\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <Content Include="formaster\plugins\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="formaster\plugins\icon-kit\dist\fonts\iconkit.eot" />
+    <Content Include="formaster\plugins\icon-kit\dist\fonts\iconkit.otf" />
+    <Content Include="formaster\plugins\icon-kit\dist\fonts\iconkit.ttf" />
+    <Content Include="formaster\plugins\icon-kit\dist\fonts\iconkit.woff" />
+    <Content Include="formaster\plugins\icon-kit\dist\fonts\iconkit.woff2" />
+    <Content Include="formaster\plugins\ionicons\dist\fonts\ionicons.eot" />
+    <Content Include="formaster\plugins\ionicons\dist\fonts\ionicons.ttf" />
+    <Content Include="formaster\plugins\ionicons\dist\fonts\ionicons.woff" />
+    <Content Include="formaster\plugins\ionicons\dist\fonts\ionicons.woff2" />
+    <Content Include="formaster\plugins\jquery-bar-rating\dist\jquery.barrating.min.js.map" />
+    <Content Include="formaster\plugins\popper.js\dist\umd\popper.min.js.map" />
+    <Content Include="formaster\plugins\summernote\.editorconfig" />
+    <Content Include="formaster\plugins\summernote\.eslintrc" />
+    <Content Include="formaster\plugins\summernote\dist\font\summernote.eot" />
+    <Content Include="formaster\plugins\summernote\dist\font\summernote.ttf" />
+    <Content Include="formaster\plugins\summernote\dist\font\summernote.woff" />
+    <Content Include="formaster\plugins\weather-icons\font\weathericons-regular-webfont.eot" />
+    <Content Include="formaster\plugins\weather-icons\font\weathericons-regular-webfont.ttf" />
+    <Content Include="formaster\plugins\weather-icons\font\weathericons-regular-webfont.woff" />
+    <Content Include="formaster\plugins\weather-icons\font\WeatherIcons-Regular.otf" />
+    <Content Include="formaster\README.md" />
+    <Content Include="formaster\src\img\.gitignore" />
+    <Content Include="formaster\src\scss\theme.scss" />
+    <Content Include="formaster\src\scss\_alert.scss" />
+    <Content Include="formaster\src\scss\_auth.scss" />
+    <Content Include="formaster\src\scss\_badges.scss" />
+    <Content Include="formaster\src\scss\_buttons.scss" />
+    <Content Include="formaster\src\scss\_calendar.scss" />
+    <Content Include="formaster\src\scss\_cards.scss" />
+    <Content Include="formaster\src\scss\_carousel.scss" />
+    <Content Include="formaster\src\scss\_forms.scss" />
+    <Content Include="formaster\src\scss\_layout.scss" />
+    <Content Include="formaster\src\scss\_main.scss" />
+    <Content Include="formaster\src\scss\_mixins.scss" />
+    <Content Include="formaster\src\scss\_modal.scss" />
+    <Content Include="formaster\src\scss\_navigation.scss" />
+    <Content Include="formaster\src\scss\_range-slider.scss" />
+    <Content Include="formaster\src\scss\_rating.scss" />
+    <Content Include="formaster\src\scss\_settings.scss" />
+    <Content Include="formaster\src\scss\_tables.scss" />
+    <Content Include="formaster\src\scss\_widgets.scss" />
+    <Content Include="HMS\MP\HmsAdmin.Master" />
+    <Content Include="formaster\login\css\4UaHrEJCrhhnVA3DgluA96rp5w.woff2" />
+    <Content Include="formaster\login\css\4UaHrEJCrhhnVA3DgluA96Tp56N1.woff2" />
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\_references.js" />
+    <Content Include="Site.Mobile.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\Common.cs" />
+    <Compile Include="App_Code\SqlDataAccess.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HMS\AdminSetup\SetupMenuGroup.aspx.cs">
+      <DependentUpon>SetupMenuGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HMS\AdminSetup\SetupMenuGroup.aspx.designer.cs">
+      <DependentUpon>SetupMenuGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HMS\Dash\DashBoard.aspx.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HMS\Dash\DashBoard.aspx.designer.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HMS\MP\HmsAdmin.Master.cs">
+      <DependentUpon>HmsAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HMS\MP\HmsAdmin.Master.designer.cs">
+      <DependentUpon>HmsAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HMS\Setup\HpDepartment.aspx.cs">
+      <DependentUpon>HpDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HMS\Setup\HpDepartment.aspx.designer.cs">
+      <DependentUpon>HpDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HMS\Setup\HpSubDepartment.aspx.cs">
+      <DependentUpon>HpSubDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HMS\Setup\HpSubDepartment.aspx.designer.cs">
+      <DependentUpon>HpSubDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HMS\Setup\UserSetup.aspx.cs">
+      <DependentUpon>UserSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HMS\Setup\UserSetup.aspx.designer.cs">
+      <DependentUpon>UserSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogintoHMS.aspx.cs">
+      <DependentUpon>LogintoHMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogintoHMS.aspx.designer.cs">
+      <DependentUpon>LogintoHMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="HMS\IPD\" />
+    <Folder Include="HMS\OPD\" />
+    <Folder Include="HMS\Reports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55652</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55652/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

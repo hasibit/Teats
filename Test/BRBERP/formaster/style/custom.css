@@ -1,0 +1,24 @@
+/*.container-fluid {
+    width: 100%;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper .page-wrap .main-content {
+    padding: 15px 0;
+    background-color: #F6F7FB;
+    min-height: calc(100vh - 120px);
+    margin-top: 60px;
+    padding-right: 15px;
+    padding-left: 255px;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}*/
+
+.table-actions {
+    text-align: left !important;
+}
